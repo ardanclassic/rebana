@@ -1,0 +1,20 @@
+.modal {
+  .modal-content {
+    background: #000;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 0 24px 0px orange;
+
+    form {
+      display: flex;
+      .select {
+        margin-left: 1em;
+      }
+      button.button {
+        margin-left: 1em;
+        background-color: darkorange;
+        font-weight: 600;
+      }
+    }
+  }
+}

@@ -1,0 +1,92 @@
+.sidebar {
+	min-width: 400px;
+	height: 100vh;
+	overflow: auto;
+	background-color: #151515;
+
+	.description-area {
+		padding: 2em;
+		.logo-title {
+			text-align: center;
+			font-size: 36px;
+			color: orange;
+			text-transform: uppercase;
+			font-weight: 600;
+		}
+		.avatar-image {
+			width: 60%;
+			margin: 2em auto 1em;
+			cursor: pointer;
+			.username {
+				font-size: 16px;
+				font-weight: 600;
+				color: #fff;
+				text-align: center;
+				margin: 8px auto;
+			}
+		}
+	}
+
+	.menu-list {
+		li {
+			position: relative;
+
+			a {
+				color: #aaa;
+				padding: 1em 2em;
+				text-transform: capitalize;
+
+				&:hover {
+					background-color: #1E1E1E;
+				}
+
+				&.active {
+					background: #1E1E1E;
+					border-right: 4px solid orange;
+				}
+
+				&.hidden {
+					display: none;
+				}
+				&.disabled {
+					pointer-events: none;
+					opacity: 0.4;
+				}
+
+				i {
+					position: absolute;
+					right: 2em;
+				}
+			}
+		}
+
+		.sub-menu {
+			padding-left: 1.5em;
+			transition: .3s all ease;
+			&.hidden {
+				display: none;
+			}
+			&.disabled {
+				pointer-events: none;
+				opacity: 0.4;
+			}
+		}
+	}
+
+
+	/* width */
+	&::-webkit-scrollbar {
+		width: 5px;
+	}
+
+	/* Handle */
+	&::-webkit-scrollbar-thumb {
+		background: #333;
+		border-radius: 4px;
+	}
+
+	/* Handle on hover */
+	&::-webkit-scrollbar-thumb:hover {
+		background: #555;
+	}
+}
