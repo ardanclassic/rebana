@@ -20,9 +20,15 @@
 			font-weight: 600;
 		}
 		.avatar-image {
+			position: relative;
 			width: 60%;
 			margin: 2em auto 1em;
 			cursor: pointer;
+			.fa-edit {
+				position: absolute;
+				right: 0;
+				color: orange;
+			}
 			.username {
 				font-size: 16px;
 				font-weight: 600;
