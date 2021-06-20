@@ -2,7 +2,7 @@ import './app.scss';
 import Sidebar from './components/sidebar/index';
 import { Dashboard, DefaultPage } from './components/contents'
 import { FileData } from 'assets/data'
-import { HashRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { store } from './redux/store';
 import { Provider } from 'react-redux';
 

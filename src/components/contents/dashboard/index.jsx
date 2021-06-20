@@ -26,7 +26,7 @@ function Dashboard(props) {
 
 	return (
 		<>
-			<h1 className="title is-1 has-text-white has-text-centered">{props.location.state.id}</h1>
+			<h1 className="title is-1 has-text-white has-text-centered">Dashboard</h1>
 			<table className="table is-fullwidth">
 				<thead>
 					<tr>
