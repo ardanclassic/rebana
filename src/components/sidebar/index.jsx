@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { Link, useLocation } from 'react-router-dom';
 import Submenu from './submenu';
 import EditProfile from 'components/modal';
+import Rebana from 'assets/rebana.png'
 import './style.scss'
 
 function Sidebar(props) {
@@ -29,7 +30,7 @@ function Sidebar(props) {
 	return (
 		<aside className="sidebar menu">
 			<div className="description-area">
-				<div className="logo-title">Rebana</div>
+				<div className="logo-title"><img src={Rebana} alt="logo" /> Rebana</div>
 				<div className="avatar-image">
 					<img src={`https://avatars.dicebear.com/api/${gender}/${avatar}.svg`} onClick={showModal} alt="avatar"/>
 					<div className="username" onClick={showModal}>{avatar}</div>

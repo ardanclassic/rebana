@@ -7,6 +7,12 @@
 	.description-area {
 		padding: 2em;
 		.logo-title {
+			img {
+				width: 56px;
+				position: absolute;
+				left: 32px;
+			}
+			position: relative;
 			text-align: center;
 			font-size: 36px;
 			color: orange;
