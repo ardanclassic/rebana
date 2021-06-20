@@ -1,5 +1,5 @@
 import { FileData } from 'assets/data'
-// import { updateMenu } from 'utils/helper';
+import { updateMenu } from 'utils/helper';
 
 const initialState = {
 	allMenu: FileData,
@@ -23,17 +23,6 @@ const reducer = (state = initialState, action) => {
 		default:
 			return state;
 	}
-}
-
-const updateMenu = (allMenu, name, type, value) => {
-	const updatedMenus = [...allMenu]
-  updatedMenus.forEach(function iter(a) {
-    if ([name].includes(a.id)) {
-      a[type] = value;
-    }
-    Array.isArray(a.childs) && a.childs.forEach(iter);
-  });
-	return updatedMenus;
 }
 
 export default reducer;

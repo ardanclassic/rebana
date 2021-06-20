@@ -27,3 +27,15 @@ export const getArrayByID = (array, id) => {
   findNode(array, id)
   return res;
 }
+
+
+export const updateMenu = (allMenu, name, type, value) => {
+	const updatedMenus = [...allMenu]
+  updatedMenus.forEach(function iter(a) {
+    if ([name].includes(a.id)) {
+      a[type] = value;
+    }
+    Array.isArray(a.childs) && a.childs.forEach(iter);
+  });
+	return updatedMenus;
+}
