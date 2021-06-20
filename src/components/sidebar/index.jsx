@@ -30,9 +30,13 @@ function Sidebar(props) {
 	return (
 		<aside className="sidebar menu">
 			<div className="description-area">
-				<div className="logo-title"><img src={Rebana} alt="logo" /> Rebana</div>
+				<div className="logo-title" >
+					<Link to="/" >
+						<img src={Rebana} alt="logo" /> Rebana
+					</Link>
+				</div>
 				<div className="avatar-image">
-					<i class="far fa-edit" onClick={showModal}></i>
+					<i className="far fa-edit" onClick={showModal}></i>
 					<img src={`https://avatars.dicebear.com/api/${gender}/${avatar}.svg`} alt="avatar"/>
 					<div className="username">{avatar}</div>
           

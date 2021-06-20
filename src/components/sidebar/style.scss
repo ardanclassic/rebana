@@ -7,6 +7,9 @@
 	.description-area {
 		padding: 2em;
 		.logo-title {
+			a {
+				color: unset;
+			}
 			img {
 				width: 56px;
 				position: absolute;
@@ -23,8 +26,8 @@
 			position: relative;
 			width: 60%;
 			margin: 2em auto 1em;
-			cursor: pointer;
 			.fa-edit {
+				cursor: pointer;
 				position: absolute;
 				right: 0;
 				color: orange;
