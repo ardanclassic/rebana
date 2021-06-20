@@ -24,7 +24,7 @@ function EditProfile({ closeModal, modalState, value }) {
   }
 
   return (
-    <div id="modal" className={`modal is-active`}>
+    <div id="modal" className="modal is-active">
       <div className="modal-background" onClick={closeModal}></div>
       <div className="modal-content">
         <form onSubmit={onSubmit}>

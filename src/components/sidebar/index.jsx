@@ -30,9 +30,9 @@ function Sidebar(props) {
 		<aside className="sidebar menu">
 			<div className="description-area">
 				<div className="logo-title">Rebana</div>
-				<div className="avatar-image" onClick={showModal}>
-					<img src={`https://avatars.dicebear.com/api/${gender}/${avatar}.svg`} alt="avatar"/>
-					<div className="username">{avatar}</div>
+				<div className="avatar-image">
+					<img src={`https://avatars.dicebear.com/api/${gender}/${avatar}.svg`} onClick={showModal} alt="avatar"/>
+					<div className="username" onClick={showModal}>{avatar}</div>
           
           <EditProfile closeModal={showModal} modalState={modal} value={getValue} />
 				</div>
