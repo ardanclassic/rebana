@@ -1,0 +1,69 @@
+.container {
+  width: 80%;
+  max-width: unset !important;
+  margin: 0 auto;
+  box-shadow: 0px 0px 150px -72px #ffb020;
+  .columns {
+    height: 100%;
+    margin: 0;
+
+    .main-content {
+      overflow: auto;
+      height: 100vh;
+      .title {
+        text-transform: capitalize;
+      }
+      .table {
+        width: 95%;
+        margin: 10% auto 1em;
+        padding: 1em;
+        border-radius: 3px 3px 1em 1em;
+        background-color: unset;
+        box-shadow: inset 0 0 58px -24px #ffc55a;
+        color: white;
+
+        thead {
+          tr {
+            th {
+              text-align: left;
+              padding: 1em 5em 1em .5em;
+              color: #ffc55a;
+            }
+          }
+        }
+        tbody {
+          tr {
+            line-height: 36px;
+            text-transform: capitalize;
+          }
+        }
+      }
+      
+      /* width */
+      &::-webkit-scrollbar {
+        width: 5px;
+      }
+    
+      /* Handle */
+      &::-webkit-scrollbar-thumb {
+        background: #333;
+        border-radius: 4px;
+      }
+    
+      /* Handle on hover */
+      &::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+    }
+  }
+}
+
+html {
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+}
